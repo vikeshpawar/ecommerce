@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parallel CrossBrowser suite]">
+  <test thread-count="5" name="Chrome test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Frmwrk.Seleniumframeworkvikesh.TestGotoCartFunctionality">
+        <methods>
+          <include name="addAnItemTotheCart" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Frmwrk.Seleniumframeworkvikesh.TestGotoCartFunctionality -->
+    </classes>
+  </test> <!-- Chrome test(failed) -->
+</suite> <!-- Failed suite [Parallel CrossBrowser suite] -->

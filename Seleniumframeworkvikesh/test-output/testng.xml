@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel CrossBrowser suite" parallel = "none">
+  <test  name="Chrome test">
+  <parameter name ="browser" value= "chrome" />
+    <classes>
+      <class name="Frmwrk.Seleniumframeworkvikesh.TestGotoCartFunctionality"/>
+    </classes>
+  </test>
+  <test  name="Chrome Headless test">
+  <parameter name ="browser" value= "headlessChrome" />
+    <classes>
+      <class name="Frmwrk.Seleniumframeworkvikesh.TestGotoCartFunctionality"/>
+    </classes>
+  </test>
+  <test  name="FireFox test">
+  <parameter name ="browser" value= "mozilla" />
+    <classes>
+      <class name="Frmwrk.Seleniumframeworkvikesh.TestGotoCartFunctionality"/>
+    </classes>
+  </test> 
+</suite>
